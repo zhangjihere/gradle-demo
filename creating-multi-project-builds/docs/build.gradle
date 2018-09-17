@@ -1,0 +1,14 @@
+plugins {
+    id 'org.asciidoctor.convert'
+}
+
+asciidoctor {
+    sources {
+        // look for a document called 'greeter.adoc' in the default source folder src/docs/asciidoc
+        include 'greeter.adoc'
+    }
+}
+// Adds 'asciidoctor' task into the build lifecycle so that if 'build' is executed for the top-level project, 
+// then documentation will be built as well
+build.dependsOn 'asciidoctor'
+

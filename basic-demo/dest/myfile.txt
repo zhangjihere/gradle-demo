@@ -1,0 +1,2 @@
+Hello Gradle!
+This is my new demo!
